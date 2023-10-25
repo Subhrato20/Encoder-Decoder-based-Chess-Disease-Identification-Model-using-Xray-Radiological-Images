@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Captions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+      <script>
+        // Function to hide the "No file chosen" text when a file is selected
+        function hideNoFileChosenText() {
+            var inputFile = document.getElementById('image');
+            var label = document.getElementById('label-image');
+            label.innerHTML = inputFile.files[0].name;
+        }
+    </script>
+    <div class = head>
+    <h1>Choose Image to generate Captions</h1></div>
+    <div class="button-container">
+        
+    <form action="{{ url_for('newpage3') }}">
+        <input type="file" name="image" id="image" class="eb">
+        <button type="submit" class="eb">Submit</button>
+
+    </div>
+</body>
+</html>

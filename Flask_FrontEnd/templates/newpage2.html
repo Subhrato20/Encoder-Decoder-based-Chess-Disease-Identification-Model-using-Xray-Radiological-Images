@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CRD IC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"> 
+</head>
+<body>
+    <div class = head>
+    <h1>Welcome to CRD Image Captioning Page!</h1></div>
+    <div class="button-container">
+    <form action="{{ url_for('newpage3') }}">
+        <button type="submit" class="ed">incptn-lstm</button>
+        <button type="submit" class="ed">incptn-trfmr</button>
+        <button type="submit" class="ed">incptn-lstm_trn</button>
+        <button type="submit" class="ed">incptn-trfmr_trn</button>
+        <button type="submit" class="ed">xcncptn-lstm_trn</button>
+        <button type="submit" class="ed">xcptn-trfmr_trn</button>
+        <button type="submit" class="ed">irn-lstm</button>
+        <button type="submit" class="ed">irn-trfmr</button>
+        <button type="submit" class="ed">irn-lstm_trn</button>
+        <button type="submit" class="ed">irn-trfmr_trn</button>
+        <button type="submit" class="ed">vgg16-lstm</button>
+        <button type="submit" class="ed">vgg16-trfmr</button>
+        <button type="submit" class="ed">ent-lstm_trn</button>
+        <button type="submit" class="ed">ent-trfmr_trn</button>
+
+
+    </div>
+</body>
+</html>
